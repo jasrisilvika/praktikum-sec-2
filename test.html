@@ -66,6 +66,41 @@
                 <textarea cols="50" rows="7" id="kesan">Kesan dan Pesan saya adalah</textarea>
                 <br>
             </fieldset>
+
+            <fieldset>
+                <legend>Pilihan Data</legend>
+                <!--Ada 2 atribut penting di dalam input type=checkbox, yaitu name dan value yg akan digunakan saat nanti data telah disimpan dan diolah-->
+                <!--Untuk isi dari name harus sama, misalnya data di bawah ini tentang hobi, berarti ditulis hobi semua. untuk value tiap nilainya harus beda per recordnya-->
+                <label>Hobi</label><br>
+                <input type="checkbox" name="hobi_user" value="001"> Menggambar <br>
+                <input type="checkbox" name="hobi_user" value="002"> Menulis <br>
+                <input type="checkbox" name="hobi_user" value="003"> Netflixan <br>
+                <input type="checkbox" name="hobi_user" value="004"> Tidur <br>
+                <input type="checkbox" name="hobi_user" value="005"> Berenang <br>
+                <input type="checkbox" name="hobi_user" value="006"> Overthinking <br>
+                <br>
+                <!--Biar cuma bisa jadi satu pilihan, ambahin atribut name dengan value yang sama di kedua record yang ada-->
+                <label>Jenis Kelamin</label><br>
+                <input type="radio" name="gender" value="001"> Laki-laki <br>
+                <input type="radio" name="gender" value="002"> Perempuan <br>
+                <br>
+                <label>Mata Kuliah</label>
+                <!--Untuk memisahkan pilihan pada dropdown, dapat digunakan tag optgroup-->
+                <select>
+                    <optgroup label="Gampang">
+                        <option value="graf">Graf dan Analisis Algoritma</option>
+                        <option value="bindo">Bahasa Indonesia</option>
+                    </optgroup>
+                    <optgroup label="Susah">
+                        <option value="metlit">Metode Penelitian</option>
+                        <option value="sbd">Sistem Basis Data</option>
+                        <option value="sbp">Pemrograman Berorientasi Objek</option>
+                    </optgroup>
+                </select>
+
+                <!--Atribut value pada tag submit untuk mengubah kata submitnya-->
+                <input type="submit" value="Kirim data">
+            </fieldset>
         </form>
 
 </body>
