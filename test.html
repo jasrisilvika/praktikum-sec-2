@@ -48,6 +48,26 @@
         </table>
     </div>
 
+    <br>
+    <br>
+    <!--Membuat form pada HTML-->
+    <!--Ada dua inputan dalam form, yg pertama input type="text" untuk menginput sesuatu yg isinya sedikit. yg kedua ada textarea untuk input yg lebih banyak-->
+    <!--atribut for dalam tag label digunakan untuk jika klik keterangan nama nisa langsung isi ke bagian inputannya. Atribut for ini dipasangkan dengan atribut id yang ada pada tag input type=text, dengan menggunakan nama variabel yang sama-->
+    <div>
+        <form>
+            <!--tag fieldset untuk merapihkan, membagi beberapa bagian form-->
+            <!--tag legend untuk memberi keterangan, yang dipasangkan dgn tag fieldset-->
+            <fieldset>
+                <legend>Nama dan Kesan Pesan</legend>
+                <label for="namauser">Nama</label>
+                <input type="text" placeholder="Masukkan Nama" id="namauser">
+                <br>
+                <label for="kesan">Kesan dan Pesan</label>
+                <textarea cols="50" rows="7" id="kesan">Kesan dan Pesan saya adalah</textarea>
+                <br>
+            </fieldset>
+        </form>
+
 </body>
 
 </html>
